@@ -81,7 +81,7 @@ public class SuperHost : MonoBehaviour
 	    {
             // pew.dk "188.226.164.147"
             // local "192.168.1.14"
-            myConID = NetworkTransport.Connect(myHostID, "127.0.0.1", 16688, 0, out error);
+            myConID = NetworkTransport.Connect(myHostID, "188.226.164.147", 16688, 0, out error);
 	    }
 
 	    if (!TestError("Connecting to host"))
@@ -155,7 +155,7 @@ public class SuperHost : MonoBehaviour
                     else
                     {
                         Debug.Log("Lost conn to server");
-                        myConID = NetworkTransport.Connect(myHostID, "127.0.0.1", 16688, 0, out error);
+                        myConID = NetworkTransport.Connect(myHostID, "188.226.164.147", 16688, 0, out error);
                         ShowSinglePanel(connectingPanel);
                     }
 	                break;
